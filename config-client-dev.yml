@@ -1,2 +1,5 @@
 info: 
  profile: dev
+ from: git
+
+test:test1
