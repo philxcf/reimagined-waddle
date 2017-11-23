@@ -3,9 +3,9 @@ spring:
   name: auth-service
  datasource:
   url: jdbc:mysql://172.16.190.141:3308/gina?characterEncoding=UTF-8
-  username=sax
-  password=sax123456
-  driver-class-name=com.mysql.jdbc.Driver
+  username:sax
+  password:sax123456
+  driver-class-name:com.mysql.jdbc.Driver
   profiles
  active: default
  sleuth:
@@ -18,7 +18,7 @@ server:
 eureka:
  client:
   service-url:
-   defaultZone=http://10.79.96.52:8763/eureka
+   defaultZone:http://10.79.96.52:8763/eureka
   instance:
    prefer-ip: true
  instance:
