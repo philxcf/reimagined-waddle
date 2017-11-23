@@ -6,7 +6,7 @@ spring:
   username: sax
   password: sax123456
   driver-class-name: com.mysql.jdbc.Driver
- profiles
+ profiles:
   active: default
  sleuth:
   sampler:
