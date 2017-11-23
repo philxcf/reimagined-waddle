@@ -5,9 +5,9 @@ spring:
   url: jdbc:mysql://172.16.190.141:3308/gina?characterEncoding=UTF-8
   username: sax
   password: sax123456
-  driver-class-name:com.mysql.jdbc.Driver
-  profiles
- active: default
+  driver-class-name: com.mysql.jdbc.Driver
+ profiles
+  active: default
  sleuth:
   sampler:
    percentage: 1.0
