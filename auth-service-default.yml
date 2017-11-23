@@ -27,7 +27,6 @@ eureka:
 #sso配置
 logging:
  path: logs
-logging:
  level:
   org:
    springframework:
@@ -42,4 +41,3 @@ feign:
 sso:
  auth:
   url: http://sso.ad.sina.com.cn/auth
-
