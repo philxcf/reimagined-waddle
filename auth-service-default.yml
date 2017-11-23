@@ -1,0 +1,45 @@
+spring
+ application
+  name: auth-service
+ datasource
+  url: jdbc:mysql://172.16.190.141:3308/gina?characterEncoding=UTF-8
+  username=sax
+  password=sax123456
+  driver-class-name=com.mysql.jdbc.Driver
+  profiles
+ active: default
+ sleuth
+  sampler
+   percentage: 1.0
+  
+server
+ port: 9113
+ 
+eureka
+ client
+  service-url
+   defaultZone=http://10.79.96.52:8763/eureka
+  instance
+   prefer-ip: true
+ instance
+  perferIpAddress: true
+
+#sso配置
+logging
+ path: logs
+logging
+ level
+  org
+   springframework
+    web: debug
+#logging.file=logs/${spring.application.name}.log
+#logging.level.org.springframework.web=info
+
+feign
+ hystrix
+  enabled: true
+
+sso
+ auth
+  url: http://sso.ad.sina.com.cn/auth
+
